@@ -11,7 +11,6 @@ function Orders() {
 
     const [order,setOrder]=useState([])
 
-    console.log(order)
 
     useEffect(()=>{
         const getorders=async ()=>{
@@ -36,7 +35,6 @@ function Orders() {
         <Header /> 
             <div className='orders_container'>
                 <h1 className='orders_title'>YOUR ORDERS</h1>
-                {/* {order && order?<div>hi</div>:<div> */}
                 {order.map((product)=>{
                     return(
                     <div className='orders_subcontainer' key={product._id}>
