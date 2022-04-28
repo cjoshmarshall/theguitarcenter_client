@@ -1,0 +1,9 @@
+.announcement{
+    text-align: center;
+    color: white;
+    background-color: rgb(15, 88, 15);
+}
+
+.announcement_container{
+padding: 5px 0;
+}

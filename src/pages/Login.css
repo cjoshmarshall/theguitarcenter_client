@@ -1,0 +1,67 @@
+.login_title{
+    margin: 10px 20px;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.login_description{
+    margin: 0 40px;
+}
+
+.login_subcontainer{
+    margin: 40px auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login_error{
+    margin: auto;
+    color: rgb(204, 0, 0);
+    font-weight: bolder;
+}
+
+.login_input{
+    margin: 0 0 32px;
+    padding: 10px 20px;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid black;
+    transition: ease-out 40ms;
+}
+
+.login_input:hover,.login_input:focus{
+    outline: 1.5px solid black;
+    border-radius: 2px;
+}
+
+.login_button{
+    margin: 10px 0;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(15, 88, 15);
+    border: none;
+    cursor: pointer;
+}
+
+.login_subcontainer>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_loader {
+    margin: auto;
+    border: 4px solid white;
+    border-top: 4px solid rgb(15, 88, 15);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

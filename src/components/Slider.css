@@ -1,0 +1,116 @@
+.slider{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.slider_arrowLeft{
+    margin:auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    background-color: rgb(15, 88, 15);
+    border-radius: 50%;
+    top: 100px;
+    bottom: -100px;
+    left: 10px;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.slider_arrowRight{
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    background-color: rgb(15, 88, 15);
+    border-radius: 50%;
+    top: 100px;
+    bottom: -100px;
+    right: 10px;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.slider_arrowLeft:hover,.slider_arrowRight:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 200ms ease-out;
+}
+
+.slider_container{
+    display: flex;
+    overflow: hidden;
+}
+.slider_subcontainer{
+    display: flex;
+    transition: ease 1000ms;
+}
+
+.slider_image1{
+    height: 100vh;
+}
+
+.slider_infoContainer{
+    color: white;
+    padding: 185px 57px;
+}
+.slider_infoContent{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.slider_infoTitle{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+.slider_infoDescription{
+    margin: 0;
+    font-size: 20px;
+}
+.slider_infoButtonContainer{
+    margin: 25px 0;
+    width: 125px;
+}
+.slider_infoButton{
+    width: 125px;
+    height: 50px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(15, 88, 15);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.slider_slideshowDots {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+  }
+  
+  .slider_slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 10px;  
+    margin: 0px 10px 0px;  
+    background-color: #c4c4c4;
+    cursor: pointer;
+    transform: translateX(-260px) translateY(-100px);
+  }
+  
+  .slider_slideshowDot.slider_active {
+    background-color: rgb(15, 88, 15);
+  }

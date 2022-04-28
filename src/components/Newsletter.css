@@ -1,0 +1,51 @@
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    color: black;
+    background-color: rgb(237,234,224)
+}
+
+.newsletter_container{
+    width: 500px;
+}
+.newsletter_container>h1{
+    margin: 0;
+    font-size: 40px;
+}
+.newsletter_container>p{
+    margin: 50px auto;
+    font-size: large;
+}
+
+.newsletter_subcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.newsletter_subcontainer>input{
+    width: 400px;
+    font-size: large;
+    font-weight: normal;
+    color: black;
+    background-color: rgb(237,234,224);
+    border: none;
+    outline: none;
+}
+
+.newsletter_subcontainer>button{
+    font-size: large;
+    color: black;
+    background-color: rgb(237,234,224);
+    border: none;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: black;
+}

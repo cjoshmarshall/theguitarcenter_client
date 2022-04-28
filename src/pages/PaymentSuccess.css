@@ -1,0 +1,17 @@
+.paymentsuccess{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    margin: 200px;
+}
+
+.paymentsuccess_iconContainer{
+    font-size: 100px;
+}
+
+
+.paymentsuccess_description{
+    margin: 0;
+}
