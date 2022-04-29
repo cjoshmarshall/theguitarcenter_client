@@ -9,7 +9,6 @@ function Newsletter() {
   const handleSubmit=async (e)=>{
     e.preventDefault()
     try{
-      console.log(email)
       const res=await publicRequest.post("/newsletter",{email})
       alert("Sumitted Successfully")
     }catch(err){
