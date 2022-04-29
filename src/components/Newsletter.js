@@ -1,15 +1,20 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
 import "./Newsletter.css"
+import { publicRequest } from '../redux/api/apiHandle'
 
 function Newsletter() {
 
   const [email,setEmail]=useState("")
-  const dispatch=useDispatch()
   
-  const handleSubmit=(e)=>{
+  const handleSubmit=async (e)=>{
     e.preventDefault()
-    // login(dispatch,{email})
+    try{
+      console.log(email)
+      const res=await publicRequest.post("/newsletter",{email})
+      alert("Sumitted Successfully")
+    }catch(err){
+      alert("Something went Wrong")
+    }
   }
 
   

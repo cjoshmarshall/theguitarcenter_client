@@ -21,7 +21,6 @@ function Signup() {
     const handleSignup=(e)=>{
         e.preventDefault()
         signup(dispatch,{fname,lname,email,password})
-        console.log(signup)
     }
 
     

@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import "./Categories.css"
-import { categories} from "../data.js"
-import axios from 'axios'
+import { publicRequest } from '../redux/api/apiHandle'
 
 function Categories() {
 
 
-        const [category,setCategory]=useState([])
+    const [category,setCategory]=useState([])
         
     useEffect(()=>{
         const getCategory=async ()=>{
           try{
-            const res=await axios.get("http://localhost:3006/api/categories")
+            const res=await publicRequest.get("/categories")
             setCategory(res.data)
           }catch(err){}
         }

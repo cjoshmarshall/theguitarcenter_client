@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import { publicRequest } from '../redux/api/apiHandle'
 import "./Specifications.css"
 
 function Specifications(){
@@ -14,7 +15,7 @@ function Specifications(){
   useEffect(()=>{
     const getGuitars=async ()=>{
       try{
-        const res=await axios.get("http://localhost:3006/api/guitars/find/"+id)
+        const res=await publicRequest.get("/guitars/find/"+id)
         setProduct(res.data.specs)
       }catch(err){}
     }

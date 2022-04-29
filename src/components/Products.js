@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Products.css'
 import axios from 'axios'
 import { Link, useLocation } from 'react-router-dom'
+import { publicRequest } from '../redux/api/apiHandle'
 
 function Products({category,filter,sort}) {
 
@@ -14,7 +15,7 @@ function Products({category,filter,sort}) {
   useEffect(()=>{
     const getGuitars=async ()=>{
       try{
-        const res=await axios.get("http://localhost:3006/api/guitars")
+        const res=await publicRequest.get("/guitars")
         setProducts(res.data)
       }catch(err){}
     }

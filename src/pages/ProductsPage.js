@@ -39,9 +39,9 @@ function ProductsPage() {
     const checked=e.target.checked
     const changeChecked=filter.value===value?{...filter,checked:!filter.checked}:filter;
     setFilter(changeChecked)
-    console.log(value)
-    console.log(filter)
-    console.log(changeChecked)
+    // console.log(value)
+    // console.log(filter)
+    // console.log(changeChecked)
   }
 
   
