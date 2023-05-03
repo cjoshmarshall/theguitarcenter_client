@@ -1,0 +1,25 @@
+.error_title {
+  margin: 10px 20px;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.error_description {
+  font-weight: lighter;
+  margin: 50px 0 15px 0;
+  text-align: center;
+}
+
+.error_buttonContainer {
+  text-align: center;
+}
+.error_button {
+  margin: 30px 0 80px 0;
+  width: 40%;
+  height: 50px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(15, 88, 15);
+  border: none;
+  cursor: pointer;
+}
