@@ -8,7 +8,7 @@ import oo from "../../assets/00.jpg";
 import { Link } from "react-router-dom";
 
 function Slider() {
-  const dots = ["#000000", "#000000", "#000000"];
+  const dots = [1, 2, 3];
 
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);
@@ -44,8 +44,8 @@ function Slider() {
 
   return (
     <div className="slider">
-      <div className="slider_arrowLeft">
-        <ArrowLeftIcon onClick={() => handleClick("left")} />
+      <div className="slider_arrowLeft" onClick={() => handleClick("left")}>
+        <ArrowLeftIcon />
       </div>
       <div className="slider_container">
         <div
@@ -117,8 +117,8 @@ function Slider() {
           ></div>
         ))}
       </div>
-      <div className="slider_arrowRight">
-        <ArrowRightIcon onClick={() => handleClick("right")} />
+      <div className="slider_arrowRight" onClick={() => handleClick("right")}>
+        <ArrowRightIcon />
       </div>
     </div>
   );
