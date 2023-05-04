@@ -21,7 +21,8 @@ function Slider() {
 
   useEffect(() => {
     resetTimeout();
-    timeoutRef.current = setTimeout(
+
+    timeoutRef.current = setInterval(
       () =>
         setIndex((prevIndex) =>
           prevIndex === dots.length - 1 ? 0 : prevIndex + 1
@@ -32,9 +33,10 @@ function Slider() {
     return () => {
       resetTimeout();
     };
-  }, []);
+  });
 
   const handleClick = (direction) => {
+    resetTimeout();
     if (direction === "left") {
       setIndex(index > 0 ? index - 1 : 2);
     } else {
@@ -112,6 +114,7 @@ function Slider() {
               index === i ? " slider_active" : ""
             }`}
             onClick={() => {
+              resetTimeout();
               setIndex(i);
             }}
           ></div>
